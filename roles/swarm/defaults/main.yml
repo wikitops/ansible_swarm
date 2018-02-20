@@ -1,0 +1,6 @@
+---
+
+swarm_port: 2377
+swarm_leader: "{{ groups['master'][0] }}"
+swarm_leader_address: "{{ swarm_leader }}:{{ swarm_port }}"
+swarm_listen_address: "{{ inventory_hostname }}:{{ swarm_port }}"
