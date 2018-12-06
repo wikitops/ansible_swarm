@@ -1,4 +1,8 @@
 ---
 
 dependencies:
-  -  { role: docker }
+
+  - role: docker
+    vars:
+      docker_users:
+        - vagrant
